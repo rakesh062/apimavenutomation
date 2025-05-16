@@ -92,6 +92,8 @@ public class UserTests {
 		
 	}
 	
+	
+	//Test case to test post method with array inputs
 	@Test(priority = 5)
 	public void testPostUserWithArray() {
 		
