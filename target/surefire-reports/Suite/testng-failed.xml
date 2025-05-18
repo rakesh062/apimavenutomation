@@ -10,7 +10,6 @@
         <methods>
           <include name="testPostUserWithArray"/>
           <include name="setUp"/>
-          <include name="testGetUserByusername"/>
         </methods>
       </class> <!-- api.test.UserTests -->
     </classes>
