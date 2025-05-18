@@ -103,12 +103,12 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="api.test.UserTests" class="method navigator-link" hash-for-method="testGetUserByusername">testGetUserByusername</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="api.test.UserTests" class="method navigator-link" hash-for-method="testPostUserWithArray">testPostUserWithArray</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="api.test.UserTests" class="method navigator-link" hash-for-method="testPostUserWithArray">testPostUserWithArray</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="api.test.UserTests" class="method navigator-link" hash-for-method="testdeleteUserByusername">testdeleteUserByusername</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -122,12 +122,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="api.test.UserTests" class="method navigator-link" hash-for-method="testPostUser">testPostUser</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="api.test.UserTests" class="method navigator-link" hash-for-method="testGetUserByusername">testGetUserByusername</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="api.test.UserTests" class="method navigator-link" hash-for-method="testdeleteUserByusername">testdeleteUserByusername</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="api.test.UserTests" class="method navigator-link" hash-for-method="testPostUser">testPostUser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -155,11 +155,11 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testGetUserByusername">
-                  </a> <!-- testGetUserByusername -->
-                  <span class="method-name">testGetUserByusername</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [404]
-	at api.test.UserTests.testGetUserByusername(UserTests.java:66)
+                  <a name="testPostUserWithArray">
+                  </a> <!-- testPostUserWithArray -->
+                  <span class="method-name">testPostUserWithArray</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [500]
+	at api.test.UserTests.testPostUserWithArray(UserTests.java:107)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 36 stack frames
 </div> <!-- stack-trace -->
@@ -167,11 +167,11 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testPostUserWithArray">
-                  </a> <!-- testPostUserWithArray -->
-                  <span class="method-name">testPostUserWithArray</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [500]
-	at api.test.UserTests.testPostUserWithArray(UserTests.java:107)
+                  <a name="testdeleteUserByusername">
+                  </a> <!-- testdeleteUserByusername -->
+                  <span class="method-name">testdeleteUserByusername</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [404]
+	at api.test.UserTests.testdeleteUserByusername(UserTests.java:91)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 36 stack frames
 </div> <!-- stack-trace -->
@@ -187,16 +187,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testPostUser">
-                  </a> <!-- testPostUser -->
-                  <span class="method-name">testPostUser</span>
+                  <a name="testGetUserByusername">
+                  </a> <!-- testGetUserByusername -->
+                  <span class="method-name">testGetUserByusername</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testdeleteUserByusername">
-                  </a> <!-- testdeleteUserByusername -->
-                  <span class="method-name">testdeleteUserByusername</span>
+                  <a name="testPostUser">
+                  </a> <!-- testPostUser -->
+                  <span class="method-name">testPostUser</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -267,28 +267,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testPostUser')
 data.setCell(0, 2, 'api.test.UserTests')
-data.setCell(0, 3, 3548);
+data.setCell(0, 3, 3523);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testdeleteUserByusername')
+data.setCell(1, 1, 'testupdateUserByusername')
 data.setCell(1, 2, 'api.test.UserTests')
-data.setCell(1, 3, 605);
+data.setCell(1, 3, 1023);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testGetUserByusername')
 data.setCell(2, 2, 'api.test.UserTests')
-data.setCell(2, 3, 591);
+data.setCell(2, 3, 699);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testPostUserWithArray')
+data.setCell(3, 1, 'testdeleteUserByusername')
 data.setCell(3, 2, 'api.test.UserTests')
-data.setCell(3, 3, 499);
+data.setCell(3, 3, 669);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testupdateUserByusername')
+data.setCell(4, 1, 'testPostUserWithArray')
 data.setCell(4, 2, 'api.test.UserTests')
-data.setCell(4, 3, 356);
+data.setCell(4, 3, 445);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -321,27 +321,27 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testPostUser</span>
-                <span class="method-start">1014 ms</span>
+                <span class="method-start">1087 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetUserByusername</span>
+                <span class="method-start">4630 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testupdateUserByusername</span>
+                <span class="method-start">5332 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testGetUserByusername</span>
-                <span class="method-start">4585 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testupdateUserByusername</span>
-                <span class="method-start">5184 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">testdeleteUserByusername</span>
-                <span class="method-start">5542 ms</span>
+                <span class="method-start">6360 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testPostUserWithArray</span>
-                <span class="method-start">6151 ms</span>
+                <span class="method-start">7038 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

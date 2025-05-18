@@ -255,3 +255,9 @@
 12:09:40,935 [main] INFO  api.test.UserTests {36} - ***************************** Creating user ********************************
 12:09:44,475 [main] INFO  api.test.UserTests {36} - ***************************** User created ********************************
 12:09:46,067 [main] INFO  api.test.UserTests {36} - ***************************** Creating user with Array ********************************
+12:16:44,071 [main] INFO  api.test.UserTests {36} - ***************************** Creating user ********************************
+12:16:47,058 [main] INFO  api.test.UserTests {36} - ***************************** User created ********************************
+12:16:48,688 [main] INFO  api.test.UserTests {36} - ***************************** Creating user with Array ********************************
+12:20:13,836 [main] INFO  api.test.UserTests {36} - ***************************** Creating user ********************************
+12:20:17,349 [main] INFO  api.test.UserTests {36} - ***************************** User created ********************************
+12:20:19,778 [main] INFO  api.test.UserTests {36} - ***************************** Creating user with Array ********************************
