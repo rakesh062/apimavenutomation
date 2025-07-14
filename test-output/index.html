@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\rakes\eclipse-workspace\restapiautomation\testng.xml</span>
+                    <span>C:\Users\rakes\eclipse-workspace\apimavenautomation\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                    <span class="method-stats">9 methods, 2 failed,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
                     <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.DataDrivenUserTests" class="method navigator-link" hash-for-method="testGetUserByUserName(rakesh001)">testGetUserByUserName(rakesh001)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="api.test.UserTests" class="method navigator-link" hash-for-method="testPostUserWithArray">testPostUserWithArray</a> <!-- method navigator-link -->
@@ -117,12 +122,27 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.DataDrivenUserTests" class="method navigator-link" hash-for-method="testGetUserByUserName(shruthi001)">testGetUserByUserName(shruthi001)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="api.test.UserTests" class="method navigator-link" hash-for-method="testGetUserByusername">testGetUserByusername</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="api.test.UserTests" class="method navigator-link" hash-for-method="testPostUser">testPostUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.DataDrivenUserTests" class="method navigator-link" hash-for-method="testPostUser(1000, rakesh001, Rakesh, Ravikumar, rakesh.ravikumar@email.com, rakesh@1234, 6151863456)">testPostUser(1000, rakesh001, Rakesh, Ravikumar, rakesh.ravikumar@email.com, rakesh@1234, 6151863456)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.DataDrivenUserTests" class="method navigator-link" hash-for-method="testPostUser(1001, shruthi001, Shruthi, Padmaprabha, shruthi.padmaprabha@email.com, shruthi@1234, 6151868357)">testPostUser(1001, shruthi001, Shruthi, Padmaprabha, shruthi.padmaprabha@email.com, shruthi@1234, 6151868357)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -167,6 +187,27 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">api.test.DataDrivenUserTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetUserByUserName(rakesh001)">
+                  </a> <!-- testGetUserByUserName(rakesh001) -->
+                  <span class="method-name">testGetUserByUserName</span>
+                  <span class="parameters">(rakesh001)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [404]
+	at api.test.DataDrivenUserTests.testGetUserByUserName(DataDrivenUserTests.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -203,10 +244,42 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.test.DataDrivenUserTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetUserByUserName(shruthi001)">
+                  </a> <!-- testGetUserByUserName(shruthi001) -->
+                  <span class="method-name">testGetUserByUserName</span>
+                  <span class="parameters">(shruthi001)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPostUser(1000, rakesh001, Rakesh, Ravikumar, rakesh.ravikumar@email.com, rakesh@1234, 6151863456)">
+                  </a> <!-- testPostUser(1000, rakesh001, Rakesh, Ravikumar, rakesh.ravikumar@email.com, rakesh@1234, 6151863456) -->
+                  <span class="method-name">testPostUser</span>
+                  <span class="parameters">(1000,rakesh001,Rakesh,Ravikumar,rakesh.ravikumar@email.com,rakesh@1234,6151863456)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPostUser(1001, shruthi001, Shruthi, Padmaprabha, shruthi.padmaprabha@email.com, shruthi@1234, 6151868357)">
+                  </a> <!-- testPostUser(1001, shruthi001, Shruthi, Padmaprabha, shruthi.padmaprabha@email.com, shruthi@1234, 6151868357) -->
+                  <span class="method-name">testPostUser</span>
+                  <span class="parameters">(1001,shruthi001,Shruthi,Padmaprabha,shruthi.padmaprabha@email.com,shruthi@1234,6151868357)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\rakes\eclipse-workspace\restapiautomation\testng.xml</span>
+            <span class="header-content">C:\Users\rakes\eclipse-workspace\apimavenautomation\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -219,6 +292,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;api.test.UserTests&quot;/&gt;
+      &lt;class name=&quot;api.test.DataDrivenUserTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -232,7 +306,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -258,32 +332,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testPostUser')
 data.setCell(0, 2, 'api.test.UserTests')
-data.setCell(0, 3, 3815);
+data.setCell(0, 3, 3612);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testdeleteUserByusername')
-data.setCell(1, 2, 'api.test.UserTests')
-data.setCell(1, 3, 811);
+data.setCell(1, 1, 'testGetUserByUserName')
+data.setCell(1, 2, 'api.test.DataDrivenUserTests')
+data.setCell(1, 3, 740);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testupdateUserByusername')
-data.setCell(2, 2, 'api.test.UserTests')
-data.setCell(2, 3, 808);
+data.setCell(2, 1, 'testPostUser')
+data.setCell(2, 2, 'api.test.DataDrivenUserTests')
+data.setCell(2, 3, 628);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testGetUserByusername')
-data.setCell(3, 2, 'api.test.UserTests')
-data.setCell(3, 3, 735);
+data.setCell(3, 1, 'testPostUser')
+data.setCell(3, 2, 'api.test.DataDrivenUserTests')
+data.setCell(3, 3, 615);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testPostUserWithArray')
+data.setCell(4, 1, 'testupdateUserByusername')
 data.setCell(4, 2, 'api.test.UserTests')
-data.setCell(4, 3, 626);
+data.setCell(4, 3, 607);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testGetUserByUserName')
+data.setCell(5, 2, 'api.test.DataDrivenUserTests')
+data.setCell(5, 3, 508);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testGetUserByusername')
+data.setCell(6, 2, 'api.test.UserTests')
+data.setCell(6, 3, 503);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testPostUserWithArray')
+data.setCell(7, 2, 'api.test.UserTests')
+data.setCell(7, 3, 325);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testdeleteUserByusername')
+data.setCell(8, 2, 'api.test.UserTests')
+data.setCell(8, 3, 288);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -316,25 +406,46 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testPostUser</span>
-                <span class="method-start">1004 ms</span>
+                <span class="method-start">1259 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetUserByusername</span>
-                <span class="method-start">4841 ms</span>
+                <span class="method-start">4887 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testupdateUserByusername</span>
-                <span class="method-start">5585 ms</span>
+                <span class="method-start">5394 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testdeleteUserByusername</span>
-                <span class="method-start">6398 ms</span>
+                <span class="method-start">6004 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testPostUserWithArray</span>
-                <span class="method-start">7216 ms</span>
+                <span class="method-start">6295 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.test.DataDrivenUserTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testPostUser(1000, rakesh001, Rakesh, Ravikumar, rakesh.ravikumar@email.com, rakesh@1234, 6151863456)</span>
+                <span class="method-start">7831 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPostUser(1001, shruthi001, Shruthi, Padmaprabha, shruthi.padmaprabha@email.com, shruthi@1234, 6151868357)</span>
+                <span class="method-start">8461 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGetUserByUserName(rakesh001)</span>
+                <span class="method-start">9154 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetUserByUserName(shruthi001)</span>
+                <span class="method-start">9897 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

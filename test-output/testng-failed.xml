@@ -12,6 +12,11 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- api.test.UserTests -->
+      <class name="api.test.DataDrivenUserTests">
+        <methods>
+          <include name="testGetUserByUserName" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- api.test.DataDrivenUserTests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
